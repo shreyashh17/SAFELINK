@@ -79,7 +79,7 @@ export default function LoginFlow({ onLogin }: Props) {
                 <div style={s.landingWrap}>
                     {/* Logo */}
                     <div style={s.logo}>
-                        <img src="/logo1.png" alt="SafeLink" style={{ width: 80, height: 80, objectFit: 'contain' }} />
+                        <img src="/logo2.png" alt="SafeLink" style={{ width: 100, height: 100, objectFit: 'contain' }} />
                         <h1 style={s.logoTitle}>SafeLink</h1>
                         <p style={s.logoSub}>Real-Time Emergency Response System</p>
                     </div>
@@ -90,7 +90,7 @@ export default function LoginFlow({ onLogin }: Props) {
                     <div style={s.portalRow}>
                         {/* Admin card */}
                         <button style={s.portalCard} onClick={() => reset('admin-login')}>
-                            <div style={{ fontSize: 48, marginBottom: 12 }}>🛡️</div>
+                            <img src="/logo2.png" alt="Admin Logo" style={{ width: 44, height: 44, marginBottom: 12, objectFit: 'contain' }} />
                             <div style={s.portalCardTitle}>Admin / Authority</div>
                             <div style={s.portalCardSub}>
                                 Dashboard for police, fire &amp; emergency authorities. View live alerts, manage incidents, monitor crowd density.
