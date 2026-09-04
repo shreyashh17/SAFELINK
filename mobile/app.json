@@ -1,0 +1,52 @@
+{
+    "expo": {
+        "name": "SafeLink",
+        "slug": "safelink",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "dark",
+        "splash": {
+            "image": "./assets/splash-icon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#0A0E1A"
+        },
+        "ios": {
+            "supportsTablet": false,
+            "bundleIdentifier": "com.safelink.app",
+            "infoPlist": {
+                "NSLocationWhenInUseUsageDescription": "SafeLink needs your location to send emergency alerts.",
+                "NSLocationAlwaysUsageDescription": "SafeLink uses background location for geofencing safety zones.",
+                "NSMicrophoneUsageDescription": "SafeLink needs microphone access to record voice complaints."
+            }
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#0A0E1A"
+            },
+            "package": "com.safelink.app",
+            "permissions": [
+                "ACCESS_FINE_LOCATION",
+                "ACCESS_COARSE_LOCATION",
+                "ACCESS_BACKGROUND_LOCATION",
+                "RECORD_AUDIO",
+                "SEND_SMS",
+                "VIBRATE"
+            ]
+        },
+        "extra": {
+            "eas": {
+                "projectId": "your-eas-project-id"
+            }
+        },
+        "plugins": [
+            [
+                "expo-location",
+                {
+                    "locationAlwaysAndWhenInUsePermission": "SafeLink uses your location for geofencing and emergency alerts."
+                }
+            ]
+        ]
+    }
+}
