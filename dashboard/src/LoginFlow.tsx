@@ -79,7 +79,7 @@ export default function LoginFlow({ onLogin }: Props) {
                 <div style={s.landingWrap}>
                     {/* Logo */}
                     <div style={s.logo}>
-                        <span style={{ fontSize: 64 }}>🛡️</span>
+                        <img src="/logo1.png" alt="SafeLink" style={{ width: 80, height: 80, objectFit: 'contain' }} />
                         <h1 style={s.logoTitle}>SafeLink</h1>
                         <p style={s.logoSub}>Real-Time Emergency Response System</p>
                     </div>

@@ -753,7 +753,7 @@ export default function App() {
             {/* Sidebar */}
             <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`} style={sosAlarm ? { top: 50 } : {}}>
                 <div className="sidebar-logo">
-                    <div className="sidebar-logo-icon">🛡️</div>
+                    <img src="/logo1.png" alt="SafeLink" className="sidebar-logo-icon" style={{ width: 40, height: 40, objectFit: 'contain', background: 'none' }} />
                     <div className="sidebar-logo-name">SafeLink</div>
                     <div className="sidebar-logo-sub">Admin Dashboard</div>
                 </div>
